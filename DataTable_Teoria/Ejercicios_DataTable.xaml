@@ -86,7 +86,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Ejercicios_DataTable" sap:VirtualizedContainerService.HintSize="1630,1725" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Ejercicios_DataTable" sap:VirtualizedContainerService.HintSize="1391,2786" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Empleados" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Empleados_Filtrada" />
@@ -99,17 +99,17 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:Comment sap:VirtualizedContainerService.HintSize="450,569" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Ejercicios DataTable&#xA;&#xA;1. Crea una nueva DataTable llamada “Empleados” con las siguientes columnas:&#xA;• ID (Int32, autoincremental, no nulos)&#xA;• Nombre (String, longitud máxima 30, no nulos)&#xA;• Apellidos (String, longitud máxima 100, no nulos)&#xA;• DNI (String, longitud máxima 9, no nulos, único)&#xA;• Ciudad (String, si nulos)&#xA;• Edad (Int32, no nulos)&#xA;• Departamento (String, valor por defecto “Ventas”)&#xA;&#xA;Llena la tabla con al menos 5 filas de datos ficticios.&#xA;&#xA;2. Utilizando la DataTable “Empleados”, agrega una nueva fila con los siguientes datos:&#xA;• Nombre: Juan&#xA;• Apellidos: López Vázquez&#xA;• DNI: 46782671Z&#xA;• Ciudad: Sevilla&#xA;• Edad: 30&#xA;• Departamento: Marketing&#xA;&#xA;3. Utilizando la tabla “Empleados”, elimina la fila correspondiente al primer empleado.&#xA;&#xA;4. Recorre la tabla “Empleados” y muestra el nombre y la edad de cada empleado.&#xA;&#xA;5. Filtrar “Empleados” para obtener las filas donde el departamento sea “Ventas”.&#xA;&#xA;6. Recorre “Empleados” filtrada y muestra el nombre y la edad de cada empleado.&#xA;&#xA;7. Ordena “Empleados” filtrada por edad de forma descendente y muestra la tabla final" />
-    <Sequence DisplayName="1.- Crear DataTable" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <ui:Comment sap:VirtualizedContainerService.HintSize="468,569" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Ejercicios DataTable&#xA;&#xA;1. Crea una nueva DataTable llamada “Empleados” con las siguientes columnas:&#xA;• ID (Int32, autoincremental, no nulos)&#xA;• Nombre (String, longitud máxima 30, no nulos)&#xA;• Apellidos (String, longitud máxima 100, no nulos)&#xA;• DNI (String, longitud máxima 9, no nulos, único)&#xA;• Ciudad (String, si nulos)&#xA;• Edad (Int32, no nulos)&#xA;• Departamento (String, valor por defecto “Ventas”)&#xA;&#xA;Llena la tabla con al menos 5 filas de datos ficticios.&#xA;&#xA;2. Utilizando la DataTable “Empleados”, agrega una nueva fila con los siguientes datos:&#xA;• Nombre: Juan&#xA;• Apellidos: López Vázquez&#xA;• DNI: 46782671Z&#xA;• Ciudad: Sevilla&#xA;• Edad: 30&#xA;• Departamento: Marketing&#xA;&#xA;3. Utilizando la tabla “Empleados”, elimina la fila correspondiente al primer empleado.&#xA;&#xA;4. Recorre la tabla “Empleados” y muestra el nombre y la edad de cada empleado.&#xA;&#xA;5. Filtrar “Empleados” para obtener las filas donde el departamento sea “Ventas”.&#xA;&#xA;6. Recorre “Empleados” filtrada y muestra el nombre y la edad de cada empleado.&#xA;&#xA;7. Ordena “Empleados” filtrada por edad de forma descendente y muestra la tabla final" />
+    <Sequence DisplayName="1.- Crear DataTable" sap:VirtualizedContainerService.HintSize="468,175" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BuildDataTable DataTable="[dt_Empleados]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="416,83" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ID&quot; msdata:AutoIncrement=&quot;true&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Nombre&quot; msdata:Caption=&quot;&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;30&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Apellidos&quot; msdata:Caption=&quot;&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;DNI&quot; msdata:Caption=&quot;&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;9&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Edad&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Departamento&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; default=&quot;Ventas&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;      &lt;xs:unique name=&quot;Constraint1&quot;&gt;&#xD;&#xA;        &lt;xs:selector xpath=&quot;.//TableName&quot; /&gt;&#xD;&#xA;        &lt;xs:field xpath=&quot;DNI&quot; /&gt;&#xD;&#xA;      &lt;/xs:unique&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;1&lt;/ID&gt;&#xD;&#xA;    &lt;Nombre&gt;Marco&lt;/Nombre&gt;&#xD;&#xA;    &lt;Apellidos&gt;Santos&lt;/Apellidos&gt;&#xD;&#xA;    &lt;DNI&gt;06675156N&lt;/DNI&gt;&#xD;&#xA;    &lt;Edad&gt;17&lt;/Edad&gt;&#xD;&#xA;    &lt;Departamento&gt;Ventas&lt;/Departamento&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;2&lt;/ID&gt;&#xD;&#xA;    &lt;Nombre&gt;María del Carmen&lt;/Nombre&gt;&#xD;&#xA;    &lt;Apellidos&gt;García&lt;/Apellidos&gt;&#xD;&#xA;    &lt;DNI&gt;43287654D&lt;/DNI&gt;&#xD;&#xA;    &lt;Edad&gt;39&lt;/Edad&gt;&#xD;&#xA;    &lt;Departamento&gt;Administración&lt;/Departamento&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;3&lt;/ID&gt;&#xD;&#xA;    &lt;Nombre&gt;Antonio&lt;/Nombre&gt;&#xD;&#xA;    &lt;Apellidos&gt;Rodriguez&lt;/Apellidos&gt;&#xD;&#xA;    &lt;DNI&gt;33387098W&lt;/DNI&gt;&#xD;&#xA;    &lt;Edad&gt;35&lt;/Edad&gt;&#xD;&#xA;    &lt;Departamento&gt;Administración&lt;/Departamento&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;4&lt;/ID&gt;&#xD;&#xA;    &lt;Nombre&gt;Jose&lt;/Nombre&gt;&#xD;&#xA;    &lt;Apellidos&gt;Fernandez&lt;/Apellidos&gt;&#xD;&#xA;    &lt;DNI&gt;87009891Q&lt;/DNI&gt;&#xD;&#xA;    &lt;Edad&gt;41&lt;/Edad&gt;&#xD;&#xA;    &lt;Departamento&gt;Ventas&lt;/Departamento&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;ID&gt;5&lt;/ID&gt;&#xD;&#xA;    &lt;Nombre&gt;Chiquito&lt;/Nombre&gt;&#xD;&#xA;    &lt;Apellidos&gt;De La Calzada&lt;/Apellidos&gt;&#xD;&#xA;    &lt;DNI&gt;00934176T&lt;/DNI&gt;&#xD;&#xA;    &lt;Edad&gt;64&lt;/Edad&gt;&#xD;&#xA;    &lt;Departamento&gt;Ventas&lt;/Departamento&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+      <ui:BuildDataTable DataTable="[dt_Empleados]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="416,83" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ID&quot; msdata:AutoIncrement=&quot;true&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Nombre&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;30&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Apellidos&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;DNI&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;9&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Edad&quot; msdata:Caption=&quot;&quot; type=&quot;xs:int&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Departamento&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; default=&quot;Ventas&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;      &lt;xs:unique name=&quot;Constraint1&quot;&gt;&#xA;        &lt;xs:selector xpath=&quot;.//TableName&quot; /&gt;&#xA;        &lt;xs:field xpath=&quot;DNI&quot; /&gt;&#xA;      &lt;/xs:unique&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;ID&gt;1&lt;/ID&gt;&#xA;    &lt;Nombre&gt;Marco&lt;/Nombre&gt;&#xA;    &lt;Apellidos&gt;Santos&lt;/Apellidos&gt;&#xA;    &lt;DNI&gt;06675156N&lt;/DNI&gt;&#xA;    &lt;Edad&gt;17&lt;/Edad&gt;&#xA;    &lt;Departamento&gt;Ventas&lt;/Departamento&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;ID&gt;2&lt;/ID&gt;&#xA;    &lt;Nombre&gt;María del Carmen&lt;/Nombre&gt;&#xA;    &lt;Apellidos&gt;García&lt;/Apellidos&gt;&#xA;    &lt;DNI&gt;43287654D&lt;/DNI&gt;&#xA;    &lt;Edad&gt;39&lt;/Edad&gt;&#xA;    &lt;Departamento&gt;Administración&lt;/Departamento&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;ID&gt;3&lt;/ID&gt;&#xA;    &lt;Nombre&gt;Antonio&lt;/Nombre&gt;&#xA;    &lt;Apellidos&gt;Rodriguez&lt;/Apellidos&gt;&#xA;    &lt;DNI&gt;33387098W&lt;/DNI&gt;&#xA;    &lt;Edad&gt;35&lt;/Edad&gt;&#xA;    &lt;Departamento&gt;Administración&lt;/Departamento&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;ID&gt;4&lt;/ID&gt;&#xA;    &lt;Nombre&gt;Jose&lt;/Nombre&gt;&#xA;    &lt;Apellidos&gt;Fernandez&lt;/Apellidos&gt;&#xA;    &lt;DNI&gt;87009891Q&lt;/DNI&gt;&#xA;    &lt;Edad&gt;41&lt;/Edad&gt;&#xA;    &lt;Departamento&gt;Ventas&lt;/Departamento&gt;&#xA;  &lt;/TableName&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;ID&gt;5&lt;/ID&gt;&#xA;    &lt;Nombre&gt;Chiquito&lt;/Nombre&gt;&#xA;    &lt;Apellidos&gt;De La Calzada&lt;/Apellidos&gt;&#xA;    &lt;DNI&gt;00934176T&lt;/DNI&gt;&#xA;    &lt;Edad&gt;64&lt;/Edad&gt;&#xA;    &lt;Departamento&gt;Ventas&lt;/Departamento&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
     </Sequence>
-    <ui:OutputDataTable DataTable="[dt_Empleados]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[str_OutputDT]">
+    <ui:OutputDataTable DataTable="[dt_Empleados]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[str_OutputDT]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -117,7 +117,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OutputDataTable>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[str_OutputDT]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[str_OutputDT]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -125,10 +125,10 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <Sequence DisplayName="2.- Agregar nueva fila" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="2.- Agregar nueva fila" sap:VirtualizedContainerService.HintSize="468,947" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -140,25 +140,28 @@
           <InArgument x:TypeArguments="x:Int32">[dt_Empleados.RowCount]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {int_NumeroFilas+1,&quot;Juan&quot;, &quot;López Vázquez&quot;, &quot;46782671Z&quot;, 30, &quot;Marketing&quot;}]" DataTable="[dt_Empleados]" DisplayName="Usamos el número extraido para añadir otro al final" sap:VirtualizedContainerService.HintSize="434,209" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+      <ui:Comment sap:VirtualizedContainerService.HintSize="434,128" sap2010:WorkflowViewState.IdRef="Comment_2" Text="Si es un autocontador en excel, puedes crear una variable con el máximo el número de elementos y añadir uno al contador. " />
+      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {int_NumeroFilas+1,&quot;Juan&quot;, &quot;López Vázquez&quot;, &quot;46782671Z&quot;, 30, &quot;Marketing&quot;}]" DataTable="[dt_Empleados]" DisplayName="Usamos el número extraido para añadir otro al final" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+      <ui:Comment sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="Comment_3" Text="Si ponemos la expresión Nothing, ese campo lo dejamos en blanco. OJO la tabla tiene que permitir nulos. En este caso, hay dos campos que permiten nulos. Uno el id que es autoincremental. Y el de departamento que autorelleno con &quot;Ventas&quot;" />
+      <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {Nothing,&quot;Alicia&quot;, &quot;Palmera Palmense&quot;, &quot;58185632Y&quot;, 22, Nothing}]" DataTable="[dt_Empleados]" DisplayName="Usamos el número extraido para añadir otro al final" sap:VirtualizedContainerService.HintSize="434,209" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
     </Sequence>
-    <ui:OutputDataTable DataTable="[dt_Empleados]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[str_OutputDT]">
+    <ui:OutputDataTable DataTable="[dt_Empleados]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="468,112" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[str_OutputDT]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OutputDataTable>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[str_OutputDT]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[str_OutputDT]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <Sequence DisplayName="3.- Eliminar Fila" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="3.- Eliminar Fila" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -167,7 +170,7 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:RemoveDataRow Row="{x:Null}" DataTable="[dt_Empleados]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="416,209" sap2010:WorkflowViewState.IdRef="RemoveDataRow_1" RowIndex="0" />
     </Sequence>
-    <ui:OutputDataTable DataTable="[dt_Empleados]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="OutputDataTable_3" Text="[str_OutputDT]">
+    <ui:OutputDataTable DataTable="[dt_Empleados]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="OutputDataTable_3" Text="[str_OutputDT]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -175,7 +178,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OutputDataTable>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[str_OutputDT]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[str_OutputDT]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -183,7 +186,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <Sequence DisplayName="4.- Mostrar Nombre y Edad" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence DisplayName="4.- Mostrar Nombre y Edad" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -208,7 +211,7 @@
         </ui:ForEachRow.Body>
       </ui:ForEachRow>
     </Sequence>
-    <Sequence DisplayName="5.- Filtrar por Columna determinada" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence DisplayName="5.- Filtrar por Columna determinada" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -235,7 +238,7 @@
         </ui:FilterDataTable.SelectColumns>
       </ui:FilterDataTable>
     </Sequence>
-    <ui:OutputDataTable DataTable="[dt_Empleados_Filtrada]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="OutputDataTable_4" Text="[str_OutputDT]">
+    <ui:OutputDataTable DataTable="[dt_Empleados_Filtrada]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="OutputDataTable_4" Text="[str_OutputDT]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -243,7 +246,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OutputDataTable>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[str_OutputDT]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[str_OutputDT]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -251,7 +254,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <Sequence DisplayName="6.- Recorrer Filtrados y Mostrar Nombre y Edad" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <Sequence DisplayName="6.- Recorrer Filtrados y Mostrar Nombre y Edad" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_7">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -270,13 +273,13 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[Empleados_Ventas(&quot;Nombre&quot;).ToString + &quot; &quot; + &#xD;&#xA;Empleados_Ventas(&quot;Apellidos&quot;).ToString + &#xD;&#xA;&quot; es un empleado del departamento de &quot; + Empleados_Ventas(&quot;Departamento&quot;).ToString + &#xD;&#xA;&quot; y tiene &quot; + Empleados_Ventas(&quot;Edad&quot;).ToString + &quot; años.&quot;]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[Empleados_Ventas(&quot;Nombre&quot;).ToString + &quot; &quot; + &#xA;Empleados_Ventas(&quot;Apellidos&quot;).ToString + &#xA;&quot; es un empleado del departamento de &quot; + Empleados_Ventas(&quot;Departamento&quot;).ToString + &#xA;&quot; y tiene &quot; + Empleados_Ventas(&quot;Edad&quot;).ToString + &quot; años.&quot;]" />
             </Sequence>
           </ActivityAction>
         </ui:ForEachRow.Body>
       </ui:ForEachRow>
     </Sequence>
-    <Sequence DisplayName="7.- Ordenar Edad Descendente y Mostrar tabla final" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_8">
+    <Sequence DisplayName="7.- Ordenar Edad Descendente y Mostrar tabla final" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_8">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -285,7 +288,7 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" ColumnName="Edad" DataTable="[dt_Empleados_Filtrada]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Decending" OutputDataTable="[dt_Empleados_Ordenada]" SortOrder="Descending" />
     </Sequence>
-    <ui:OutputDataTable DataTable="[dt_Empleados_Ordenada]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="450,112" sap2010:WorkflowViewState.IdRef="OutputDataTable_5" Text="[str_OutputDT]">
+    <ui:OutputDataTable DataTable="[dt_Empleados_Ordenada]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="468,112" sap2010:WorkflowViewState.IdRef="OutputDataTable_5" Text="[str_OutputDT]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -293,7 +296,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:OutputDataTable>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[str_OutputDT]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="468,48" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[str_OutputDT]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
