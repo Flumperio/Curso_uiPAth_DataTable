@@ -4,6 +4,7 @@
   "description": "Data tables y Excels",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Excel.Activities": "[2.24.4]",
     "UiPath.System.Activities": "[25.2.1]"
   },
   "webServices": [],
